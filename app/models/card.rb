@@ -6,7 +6,6 @@ class Card
   field :user, type: String
 
   def to_hash
-    p id.to_s
     {
       id:     id.to_s,
       status: status,
