@@ -2,7 +2,7 @@ class CardsController < ApplicationController
 
   protect_from_forgery unless: :no_forgery
 
-  def forgery
+  def no_forgery
     true
   end
 
