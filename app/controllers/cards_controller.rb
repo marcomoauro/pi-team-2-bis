@@ -1,11 +1,5 @@
 class CardsController < ApplicationController
 
-  protect_from_forgery unless: :no_forgery
-
-  def no_forgery
-    true
-  end
-
   def index
     render status: 200, json: Card.all.map(&:to_hash).to_json
   rescue => e
