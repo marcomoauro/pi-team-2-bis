@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
 
-  protect_from_forgery unless: forgery
+  protect_from_forgery unless: :no_forgery
 
   def forgery
     true
